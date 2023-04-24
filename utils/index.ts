@@ -16,7 +16,7 @@ export const OpenAIStream = async (prompt: string) =>{
             model: 'gpt-3.5-turbo',
             messages: [{
                 role: "system",
-                content: `You are a helpful assistant that answers queries about Paul Graham's essay. Response in 3-5 sentences.`
+                content: `You are a helpful assistant that answers queries about Paul Graham's essay. Response in 3-5 sentences, in Spanish language.`
             },
             { role: "user",
             content: prompt}],

@@ -1,6 +1,7 @@
 import endent from "endent";
 import { PGChunk } from '@/types';
 import {useState} from 'react';
+import { Answer } from "@/components/answer/Answer";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -88,8 +89,8 @@ export default function Home() {
       <div className="mt-4">
     {
       loading
-      ? <div>Loading...</div>
-      : <div>{answer}</div>
+      ? <div>Cargando... Puede tardar hasta un minuto</div>
+      : <Answer text={answer}/>
 
     }
       </div>

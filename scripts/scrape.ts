@@ -136,7 +136,6 @@ const getChunks = async (essay: PGEssay) => {
 
 (async () => {
   const links = await getLinks();
-  console.log(links.length);
   let essays: PGEssay[] = [];
 
   for (let i = 0; i < links.length; i++) {
